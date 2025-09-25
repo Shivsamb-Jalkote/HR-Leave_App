@@ -126,7 +126,7 @@ docker-compose --version
 now we need to login into your docker hub repo to store our images inside to docker hub.
 
 ```
-docker login -u ghandgevikas
+docker login -u shivjalkote
 ```
 then add password of dockerhub.
 
