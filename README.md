@@ -220,7 +220,7 @@ now tools setups is done but in this setup we have not added sonarqube i will up
 now we need to add docker credentials into the jenkins.
 dashboard --> manage jenkins --> security --> credentilas --> global --> add credentilas.
 dcoker-hub username and password and also add ID
-docker username -- ghandgevikas 
+docker username -- shivjalkote 
 passoword -- *****
 ID=docker-creds  description=docker-creds   add creds and save it.
 
@@ -238,7 +238,7 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDS = credentials('docker-creds')
-        DOCKER_IMAGE = "ghandgevikas/leave-management"
+        DOCKER_IMAGE = "shivjalkote/leave-management"
         DOCKER_TAG = "${BUILD_NUMBER}"
         APP_DIR = "leave-app-kastro-master"
     }
@@ -246,7 +246,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/Vikasghandge/HR-Leave_App.git'
+                git branch: 'main', url: 'https://github.com/shivjalkote/HR-Leave_App.git'
             }
         }
 
@@ -550,7 +550,7 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDS = credentials('docker-creds')
-        DOCKER_IMAGE = "ghandgevikas/leave-management"
+        DOCKER_IMAGE = "shivjalkote/leave-management"
         DOCKER_TAG = "${BUILD_NUMBER}"
         APP_DIR = "leave-app-kastro-master"
         EKS_CLUSTER = "my-eks"
@@ -563,7 +563,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/Vikasghandge/HR-Leave_App.git'
+                git branch: 'main', url: 'https://github.com/shivjalkote/HR-Leave_App.git'
             }
         }
 
@@ -851,33 +851,3 @@ kubectl delete deployment <name>              # Delete deployment
 kubectl delete svc <svc-name>                 # Delete service
 
 ```
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-.
-
-
-
-
-
-
-
-
