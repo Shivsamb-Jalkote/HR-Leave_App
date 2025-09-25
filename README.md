@@ -15,7 +15,7 @@ Name: HR-Leave-App
 OS: Ubuntu
 Instance Type: t2.medium or t2.large
 Storage: 30GB
-Key Pair: vikas-key
+Key Pair: shiv-key
 
 
 ssh into your server -
